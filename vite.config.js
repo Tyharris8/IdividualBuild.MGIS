@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 // Replace 'fitcraft' with your repository name if different
 export default defineConfig({
   plugins: [react()],
-  base: '/fitcraft/', 
+  base: '/IndividualBuild.MGIS/', 
 });

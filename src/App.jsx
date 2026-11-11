@@ -225,6 +225,7 @@ export default function App() {
       if (currentItem.rest > 0) {
         setTimerState('rest');
         setSecondsRemaining(currentItem.rest);
+        setIsTimerRunning(true);  //
       } else {
         advanceSetOrExercise();
       }
