@@ -279,7 +279,7 @@ export default function App() {
     const newRecord = {
       id: 'h-' + Date.now(),
       planTitle: activePlan ? activePlan.title : 'Custom Routine',
-      date: new Date().toISOString().split('T')[0],
+      date: new Date().toLocaleDateString('en-CA'),
       durationMinutes,
       completedSets: completedSetsCount,
       totalCalories: Math.round(durationMinutes * 7.5)
