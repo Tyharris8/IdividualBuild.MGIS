@@ -11,14 +11,16 @@ The goal of the app is to help users make more informed decisions about their wo
 ## Ideas/Improvements
 Focus tab: intended for users who already know their bodies physical limitations whether from injury, sorness, or lack of training and want help making informed exercise selections during recovery and long term conditioning
 
-## current direction
+Update display-experiemnt with different ambiance for the app
+
+## Current Direction
 getting the existing application fully functional before expanding scope
 remove calorie tracker, the app uses unreliable calculation which we're better off without
 
 ## Summary of Key Features:
 Secondary Category Matching: Exercises display dynamically under all relevant categories (e.g., Squat Jumps under Lower Body, Plyometric, and Home Workout).
 
-ID & Name Deduplication: Ensures zero duplicate exercise cards appear within any single category tab or modal.
+Guided Exercise Progression: Step-by-step set tracker with visual progress bar across the entire routine.
 
 Live Counter Badges: Every category tab chip displays a real-time counter showing how many options are available without needing to open the tab.
 
@@ -26,9 +28,15 @@ Instant Search: Real-time filtering by exercise name or target muscle group.
 
 Live Workout Player with automated work/rest timers and Web Audio API beepers.
 
-Offline Exercise Database** with clear green/yellow equipment warning labels.
+Fully Offline & Self-Contained: Hardcoded exercise seed database (INITIAL_EXERCISES) operating completely offline without requiring external AI APIs.
 
-Responsive Mobile & Desktop UI** with local performance tracking and GitHub Pages deployment configuration.
+    Clear Equipment Warnings: Visual badge indicators on every exercise card:
+
+    Green Badge ("🏠 Bodyweight / No Gear Needed") for zero-equipment movements.
+
+    Yellow Badge ("⚠️ Requires: [Equipment Name]") specifying needed items (Dumbbells, Barbell, Resistance Bands, Plyo Box, Medicine Ball, etc.).
+
+Responsive Mobile & Desktop UI with local performance tracking and GitHub Pages deployment configuration.
 
 ## Development Environment
 React: manages the interactive features of FitCraft 
@@ -40,9 +48,9 @@ Vite: provides development server
     2. Manage dependencies
     3. Provide local deployment server 
 ### Why?
-Simply openeing an HTML file would not reliably run the application as written 
+Simply openeing the HTML file Gemini gave would not reliably run the application as written 
 FitCraft original code was built using react componenets and JSX, which required a compatible development environment to function properly
-**React provides FitCraft's interactive application structure (UI and logic), while vite provides the tools needed to develop, run, and build the application
+**React provides FitCraft's interactive application structure (UI and logic), while vite provides the tools needed to develop, run, and build the application**
 
 
 
